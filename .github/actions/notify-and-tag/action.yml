@@ -43,7 +43,7 @@ inputs:
   webhook_url:
     description: >
       URL del webhook para enviar la notificación de release.
-      Pasar como secret: ${{ secrets.SLACK_WEBHOOK_URL }}.
+      Pasar como secret desde el workflow: secrets.SLACK_WEBHOOK_URL
       Si está vacío, la notificación se omite sin fallar.
     required: false
     default: ""
